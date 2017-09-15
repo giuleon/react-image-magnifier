@@ -1,6 +1,5 @@
 # react-image-magnifier
 An image magnifier control built with [TypeScript](https://www.typescriptlang.org) for [React](https://facebook.github.io/react) based on [react-image-magnifier](https://github.com/lelandrichardson/react-image-magnifier).
-Initially built for use in Office 365 / SharePoint.
 
 ![React-Taxonomy-Picker-gif](./assets/demo.gif)
 
