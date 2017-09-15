@@ -1,18 +1,18 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { ImageMagnifier } from "./components/ImageMagnifier";
+import { ImageMagnifierLens } from "./components/ImageMagnifierLens";
 
 ReactDOM.render(
     <div>
-        <ImageMagnifier
+        <ImageMagnifierLens
             image={{
-                src: "./src/img/world-map-small.jpg",
+                src: "https://github.com/giuleon/react-image-magnifier/blob/master/src/img/world-map-small.jpg",
                 width: 400,
                 height: 300
             }}
             zoomImage={{
-                src: "./src/img/world-map-large.jpg",
+                src: "https://github.com/giuleon/react-image-magnifier/blob/master/src/img/world-map-large.jpg",
                 width: 1600,
                 height: 1200
             }}

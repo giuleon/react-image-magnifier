@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import MagnifierProps from './IMagnifierProps';
-import ImageMagnifierProps from './IImageMagnifierProps';
-import ImageMagnifierState from './IImageMagnifierState';
+import ImageMagnifierLensProps from './IImageMagnifierLensProps';
+import ImageMagnifierLensState from './IImageMagnifierLensState';
 import IOffset from './IOffset';
 
 export class Magnifier extends React.Component<MagnifierProps, {}> {
@@ -44,10 +44,10 @@ export class Magnifier extends React.Component<MagnifierProps, {}> {
     }
 }
 
-export class ImageMagnifier extends React.Component<ImageMagnifierProps, ImageMagnifierState> {
+export class ImageMagnifierLens extends React.Component<ImageMagnifierLensProps, ImageMagnifierLensState> {
     private portalElement: HTMLDivElement = null;
 
-    constructor(props: ImageMagnifierProps, state: ImageMagnifierState) {
+    constructor(props: ImageMagnifierLensProps, state: ImageMagnifierLensState) {
         super(props);
 
         this.setState({

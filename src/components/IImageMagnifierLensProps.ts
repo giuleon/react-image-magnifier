@@ -1,4 +1,4 @@
-interface IImageMagnifierProps { 
+interface IImageMagnifierLensProps { 
         // the size of the magnifier window
         size?: number,
         
@@ -23,4 +23,4 @@ interface IImageMagnifierProps {
         })
 }
 
-export default IImageMagnifierProps;
+export default IImageMagnifierLensProps;

@@ -1,4 +1,4 @@
-# react-image-magnifier
+# react-image-magnifier-lens
 An image magnifier control built with [TypeScript](https://www.typescriptlang.org) for [React](https://facebook.github.io/react) based on [react-image-magnifier](https://github.com/lelandrichardson/react-image-magnifier).
 
 ![demo-gif](https://raw.githubusercontent.com/giuleon/react-image-magnifier/HEAD/assets/demo.gif)
@@ -13,7 +13,7 @@ An image magnifier control built with [TypeScript](https://www.typescriptlang.or
 - Allow to magnify an image through a lens.
 
 ## Installation
-Steps to use react-image-magnifier in your React project
+Steps to use react-image-magnifier-lens in your React project
 ### 1.Install from NPM
 ```
 npm install --save react-image-magnifier-lens
@@ -21,12 +21,12 @@ npm install --save react-image-magnifier-lens
 
 ### 2. Import and use in your application
 ```
-import ImageMagnifier from "react-image-magnifier";
+import ImageMagnifierLens from "react-image-magnifier-lens";
 ```
 
 ### 3. Usage
 ```js
-<ImageMagnifier
+<ImageMagnifierLens
     image={{
         src: "./src/img/world-map-small.jpg",
         width: 400,
