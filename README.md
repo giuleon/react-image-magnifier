@@ -4,7 +4,7 @@ An image magnifier control built with [TypeScript](https://www.typescriptlang.or
 ![React-Taxonomy-Picker-gif](./assets/demo.gif)
 
 <!-- [![npm version](https://badge.fury.io/js/react-taxonomypicker.svg)](https://badge.fury.io/js/react-taxonomypicker) -->
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jquintozamora/react-taxonomypicker/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/giuleon/react-image-magnifier/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](Readme.md#want-to-contribute)
 
 <!-- [![NPM](https://nodei.co/npm/react-taxonomypicker.png?downloads=true)](https://nodei.co/npm/react-taxonomypicker/) -->
@@ -58,7 +58,7 @@ Anyone can help make this project better
 ## License
 MIT License
 
-Copyright (c) 2017 José Quinto (https://blog.josequinto.com)
+Copyright (c) 2017 Giuliano De Luca (http://www.delucagiuliano.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
