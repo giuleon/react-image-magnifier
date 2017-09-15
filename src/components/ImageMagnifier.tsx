@@ -1,97 +1,19 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import MagnifierProps from './IMagnifierProps';
+import ImageMagnifierProps from './IImageMagnifierProps';
+import ImageMagnifierState from './IImageMagnifierState';
+import IOffset from './IOffset';
 
-export interface MagnifierProps { 
-        // the size of the magnifier window
-        size?: number,
-        
-        // x position on screen
-        x?: number,
-
-        // y position on screen
-        y?: number,
-
-        // x position relative to the image
-        offsetX?: number,
-
-        // y position relative to the image
-        offsetY?: number,
-
-        // the offset of the zoom bubble from the cursor
-        cursorOffset?: ({
-            x?: number,
-            y?: number
-        }),
-
-        // the size of the non-zoomed-in image
-        smallImage?: ({
-            src?: string,
-            width?: number,
-            height?: number
-        }),
-
-        // the size of the zoomed-in image
-        zoomImage?: ({
-            src?: string,
-            width?: number,
-            height?: number
-        })
-        
-}
-export interface ImageMagnifierProps { 
-        // the size of the magnifier window
-        size?: number,
-        
-        // the offset of the zoom bubble from the cursor
-        cursorOffset?:({
-            x?: number,
-            y?: number
-        }),
-
-        // the size of the non-zoomed-in image
-        image?: ({
-            src?: string,
-            width?: number,
-            height?: number
-        }),
-
-        // the size of the zoomed-in image
-        zoomImage?: ({
-            src?: string,
-            width?: number,
-            height?: number
-        })
-}
-
-export interface ImageMagnifierState { 
-    x: number,
-    y: number,
-    offsetX: number,
-    offsetY: number
-}
-
-export interface IOffset {
-    x: number,
-    y: number
-}
-
-// 'HelloProps' describes the shape of props.
-// State is never set so we use the 'undefined' type.
-// export class ImageMagnifier extends React.Component<ImageMagnifierProps, undefined> {
-//     render() {
-//         return <h1>Hello from {this.props.compiler} and {this.props.framework}!</h1>;
-//     }
-// }
-
-export class Magnifier extends React.Component<MagnifierProps, ImageMagnifierState> {
+export class Magnifier extends React.Component<MagnifierProps, {}> {
     render (): React.ReactElement<MagnifierProps> {
-        var props = this.props;
-        var halfSize = props.size / 2;
-        var magX = props.zoomImage.width / props.smallImage.width;
-        var magY = props.zoomImage.height / props.smallImage.height;
-        var bgX = -(props.offsetX*magX - halfSize);
-        var bgY = -(props.offsetY*magY - halfSize);
-        var isVisible = props.offsetY < props.smallImage.height &&
+        let props = this.props;
+        let halfSize = props.size / 2;
+        let magX = props.zoomImage.width / props.smallImage.width;
+        let magY = props.zoomImage.height / props.smallImage.height;
+        let bgX = -(props.offsetX*magX - halfSize);
+        let bgY = -(props.offsetY*magY - halfSize);
+        let isVisible = props.offsetY < props.smallImage.height &&
                         props.offsetX < props.smallImage.width &&
                         props.offsetY > 0 &&
                         props.offsetX > 0;
@@ -122,25 +44,11 @@ export class Magnifier extends React.Component<MagnifierProps, ImageMagnifierSta
     }
 }
 
-// function getOffset(el) {
-//     var x = 0;
-//     var y = 0;
-//     while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
-//         x += el.offsetLeft - el.scrollLeft;
-//         y += el.offsetTop - el.scrollTop;
-//         el = el.offsetParent;
-//     }
-//     return { x, y };
-// }
-
 export class ImageMagnifier extends React.Component<ImageMagnifierProps, ImageMagnifierState> {
     private portalElement: HTMLDivElement = null;
 
-    constructor(props: ImageMagnifierProps) {
+    constructor(props: ImageMagnifierProps, state: ImageMagnifierState) {
         super(props);
-        // props.size = 200;
-        // props.cursorOffset.x = 0;
-        // props.cursorOffset.y = 0;
 
         this.setState({
             x: 0,
