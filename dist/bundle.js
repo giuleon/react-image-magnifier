@@ -200,6 +200,7 @@ var ImageMagnifierLens = /** @class */ (function (_super) {
     return ImageMagnifierLens;
 }(React.Component));
 exports.ImageMagnifierLens = ImageMagnifierLens;
+exports.default = ImageMagnifierLens;
 
 
 /***/ }),

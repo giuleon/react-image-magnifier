@@ -112,3 +112,5 @@ export class ImageMagnifierLens extends React.Component<ImageMagnifierLensProps,
         );
     }
 }
+
+export default ImageMagnifierLens;
