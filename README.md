@@ -1,14 +1,13 @@
 # react-image-magnifier
 An image magnifier control built with [TypeScript](https://www.typescriptlang.org) for [React](https://facebook.github.io/react) based on [react-image-magnifier](https://github.com/lelandrichardson/react-image-magnifier).
 
-![React-Taxonomy-Picker-gif](./assets/demo.gif)
+![demo-gif](https://raw.githubusercontent.com/giuleon/react-image-magnifier/HEAD/assets/demo.gif)
 
-<!-- [![npm version](https://badge.fury.io/js/react-taxonomypicker.svg)](https://badge.fury.io/js/react-taxonomypicker) -->
+[![npm version](https://badge.fury.io/js/react-image-magnifier-lens.svg)](https://badge.fury.io/js/react-image-magnifier-lens)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/giuleon/react-image-magnifier/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](Readme.md#want-to-contribute)
 
-<!-- [![NPM](https://nodei.co/npm/react-taxonomypicker.png?downloads=true)](https://nodei.co/npm/react-taxonomypicker/) -->
-
+[![NPM](https://nodei.co/npm/react-image-magnifier-lens.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-image-magnifier-lens/)
 
 ## Features
 - Allow to magnify an image through a lens.
@@ -17,7 +16,7 @@ An image magnifier control built with [TypeScript](https://www.typescriptlang.or
 Steps to use react-image-magnifier in your React project
 ### 1.Install from NPM
 ```
-npm install --save react-image-magnifier
+npm install --save react-image-magnifier-lens
 ```
 
 ### 2. Import and use in your application
