@@ -1,5 +1,5 @@
 {
-  "name": "react-image-magnifier",
+  "name": "react-image-magnifier-lens",
   "version": "1.0.0",
   "description": "Magnify an image through a lens",
   "main": "index.js",
