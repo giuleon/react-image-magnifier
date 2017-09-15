@@ -3,20 +3,20 @@ interface IImageMagnifierProps {
         size?: number,
         
         // the offset of the zoom bubble from the cursor
-        cursorOffset:({
+        cursorOffset?:({
             x?: number,
             y?: number
         }),
 
         // the size of the non-zoomed-in image
-        image: ({
+        image?: ({
             src?: string,
             width?: number,
             height?: number
         }),
 
         // the size of the zoomed-in image
-        zoomImage: ({
+        zoomImage?: ({
             src?: string,
             width?: number,
             height?: number
